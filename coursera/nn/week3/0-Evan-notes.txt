@@ -1,0 +1,14 @@
+RUN THE CODE:
+
+cd to this directory, run octave shell.
+
+In octave shell...
+> load dataset1
+> w = learn_perceptron(neg_examples_nobias, pos_examples_nobias, w_init, w_gen_feas)
+
+OUTPUT: charts of the perceptron algorithm converging to a solution
+
+GOAL: 
+1. understand linear separability of inputs
+2. that perceptron learning algorithm will converge for a linearly separable set of inputs
+3. that the distance between the weight vector and a 'generously feasible' weight vector decreases monotonically as one iterates through the full set of training cases
