@@ -1,0 +1,18 @@
+#install
+sudo apt-get install mysql-server --fix-missing
+sudo apt-get install mysql-client python-mysqldb
+
+#shell
+mysql -uroot -hlocalhost -p
+mysql -uevan -hlocalhost <dbname> -p
+
+#admin
+CREATE DATABASE <xxx>;
+CREATE USER '<user>'@'<host>' IDENTIFIED BY <passwd>:
+GRANT ALL PRIVILEGES ON <xxx>.* TO '<user>'@'<host>';
+FLUSH PRIVILEGES;
+
+#querying
+SHOW DATABASES;
+USE <db>;
+SHOW TABLES;
