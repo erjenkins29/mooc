@@ -1,0 +1,59 @@
+1. Challenges of object recognition
+segmentation:
+ - which pieces come tgtr to make an object (faces)
+ - obscuring
+lighting
+deformation:
+  - e.g. hand-written 2 can have a large loop or just a cusp
+affordances:
+  - object classes are usually defined by how they are used, not necessarily their shapes (e.g. chairs are designed for sitting, but can have a variety of shapes)
+viewpoint:
+  - can lead to _dimension-hopping_ (e.g. if a medical database records age and weight, and somewhere along the line those two data point records are switched
+
+
+2. Viewpoint invariance
+methods: 
+redundant invariant features
+   - extract a large, redundant set of features that are invariant under transformations (e.g. pair of roughly parallel lines with a red dot between)
+   + don't need to represent relationships between other features directly
+judicial normalization
+   - put a box around object, normalize features 
+   + solves the dimension-hopping problem
+   + box can provide invariance of many degrees of freedom: translation, scaling, rotation, shear, stretch
+   + However, choosing the box is difficult (segmentation errors, occlusion, unusual orientations)
+   - brute force normalization approach: training the recognizer, use well-segmented, upright images to fit the correct box.  At test time, try all possible boxes in a range of positions and scales.  
+   + it's more efficient if the recognizer can cope with some variation of position and scale so that we can use a coarse grid when trying all boxes.
+
+[occlusion - object being obscured]
+
+3. Replicated features with pooling (CNN's)
+   - use many copies of the same feature detector with different positions
+   + replicated features do not make features invariant, they make them equivariant 
+   + there is invariance, in that if you know how to detect that feature in one place, you'll know how to detect that feature in another place.
+   + so, equivariance in the activities, invariance in the weights.
+
+Le Net, a CNN for MNIST with:
+  - many hidden layers
+  - many maps of replicated units in each layer
+  - pooling of outputs of nearby replicated units
+  - a wide net that can cope with several characters at once even if they overlapped
+  + automatically reads
+  + demos at http://yann.lecun.com
+
+Priors:
+We put our prior knowledge about a task into a network through:
+  - connectivity
+  - weight constraints
+  - neuron activation functions
+this is less intrusive than hand designing the features, but still prejudices the network toward a particular way of solving the problem.
+
+Alternatively, we can use our prior knowledge to make much more training data.
+Make extra features by simulating extra features based on the training cases.
+
+How to detect a significant drop in error rate.
+Is 30 errors in 10k test cases significantly better than 40 errors?
+Answer:  it depends on the particular errors
+  + McNemar test - ratio between (cases model 1 gets right & model 2 gets wrong) and (model 1 gets wrong & model 2 gets right).  if the ratio is a large number, then model 1 is better. if ratio very small, model 2 is better. 
+   
+
+
