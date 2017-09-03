@@ -1,0 +1,64 @@
+## Q3
+wxh =.5
+whh = -1.
+why = -.7
+hbias= -1.
+ybias = 0
+
+x0 = 9.
+x1 = 4.
+x2 = -2.
+
+h0 = x0*wxh + 1*hbias
+y0 = sigma(h0)*why + 1*ybias
+h1 = x1*wxh + sigma(h0)*whh + 1*hbias
+y1 = sigma(h1)*why + 1*ybias
+h2 = x2*wxh + sigma(h1)*whh + 1*hbias
+y2 = sigma(h2)*why + 1*ybias
+
+print "y_1: ", y1
+print "y_2: ", y2
+
+
+########### Q4 ################
+wxh =-.1
+whh = .5
+why = .25
+hbias= 0.4
+ybias = 0
+
+x0 = 18.
+x1 = 9.
+x2 = -8.
+
+t  = (0.1, -0.1, -0.2) 
+
+h0 = x0*wxh + 1*hbias
+y0 = sigma(h0)*why + 1*ybias
+h1 = x1*wxh + sigma(h0)*whh + 1*hbias
+y1 = sigma(h1)*why + 1*ybias
+h2 = x2*wxh + sigma(h1)*whh + 1*hbias
+y2 = sigma(h2)*why + 1*ybias
+
+def errfcn(tup): return .5 * (tup[0] - tup[1])**2
+
+e  = map(errfcn, zip(t, (y0,y1,y2)) )
+
+dedz2 = (y2 - t[2])*why*sigma(h2)*(1 - sigma(h2))
+
+print "answer:" dedz2
+
+########### Q5 ################
+wxh = 1.
+whh =-2.
+why = 1.
+hbias = 0
+ybias = 0
+
+x0 = 1.
+x1 = 0.
+x2 = 0.
+x3 = 0.
+
+t  = (0.1, -0.1, -0.2) 
+

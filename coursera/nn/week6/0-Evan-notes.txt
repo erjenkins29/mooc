@@ -1,0 +1,55 @@
+1.
+error surfaces in a non-linear mlp are not a quadratic bowl globally, but locally exhibit this property.
+
+gradient descent: 
+for large redundant datasets, gradient will be similar to the top half of the data set and the bottom half (assuming randomly distributed data)
+
+--> minibatch learning almost always encouraged
+
+important, must shoot for well distributed classes when choosing mini-batch size (typically around 10, 100, 1000
+
+lower learning rate --> slow movement toward lowest point, but accurate
+high learning rate --> will oscillate around lowest point, may diverge
+
+--> choosing an adjustable learning rate is important
+--> when getting to the end of learning, decreasing the learning rate also important
+
+2.
+initializing weights:
+if two hidden units have exactly the same bias and incoming/outgoing weights, they'll always get the same gradient
+--> initialize with small random numbers
+--> initial weights = sqrt(fan-in)
+--> also possible to scale the learning rate the same way
+
+for linear neurons:
+decorrelate the input weights from the other input weights (PCA).
+Then, divide the remaining principle components by the square root of their eigenvalues
+That will give a circular error surface.
+
+if learning rate too large, the weights can blow up in either the neg or pos direction
+--> sometimes people think that means they got stuck in a local minimum, but actually it means that they're just on the end of a plateau
+
+be careful about turning the learning rate down too soon
+
+4 ways to make minibatch faster
+- use "momentum" -- instead of using the gradient to change the position, use it to change the _speed_ at which the weight particle moves along weight space (i.e. remembers previous gradients in its velocity)
+- slowly adjust the learning rate on empirical measurements
+- rmsprop: divide learning rate for a weight by running average of the magnitudes of the recent gradients
+- some other optimization method for full-batch learning applied to nns
+
+3. 
+momentum method: one of the most common ways for learning on large nn's=sgd with momentum
+nesterov method
+setskever method
+
+4. adaptive learning rate
+
+limit the gains to a range
+designed for full-batch learning
+can be combined with the momentum technique
+
+5. rmsprop
+small datasets, use a full-batch method (conjugate gradient, lbfgs, etc.)
+big, redundant datasets, use mini-batch (try grad descent with momentum)
+try rmsprop
+try yann lecun (for sgd methods)
