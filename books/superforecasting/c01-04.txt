@@ -1,0 +1,19 @@
+=====c1====
+- early 19th century - Pierre-Simon Laplace - if all is known about the past and present moment, then the future can be deterministically mapped out
+- mid 20th century - Edward Lorenz - very minute changes in nonlinear systems can  (butcreate vast changes in output (butterfly effect)
+- we are more aware now that we know less about how to forecast going forward
+- forecasting ability less about what one knows, more about how one thinks
+
+=====c2====
+2nd century - Galen - "elixir cures the disease in all cases, except those which ar incurable" ==> medicine was evangelical
+19th century - Thomsonianism - theory that excess cold in the body is source of illness
+1747 - James Lind - accidentally discovers cure to scurvy as citrus by dividing people into 6 experiment groups and giving them different treatments.  Doesn't take away the method or even results of findings.
+confirmation bias
+“declarations of high confidence mainly tells you that an individual has constructed a coherent story, not necessarily that the story is true." -Daniel Kahneman
+attribue substitution
+intuition/analysis dichotomy
+forecasts need to be equipped with a tablespoon of doubt
+
+=====c3====
+
+=====c4====
