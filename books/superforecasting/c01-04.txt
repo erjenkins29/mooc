@@ -15,5 +15,13 @@ intuition/analysis dichotomy
 forecasts need to be equipped with a tablespoon of doubt
 
 =====c3====
+measuring
+mid 20th century - Sherman Kent - realized that forecasting "probable" was too subjective for forecasting purposes, so created a mapping of forecasting probabilities to words that is still in use.
+resolution and calibration for judging forecasting methods is important, not simply asking whether the forecast was right or wrong
+fox/hedgehog (the fox knows many things but the hedgehog knows one big thing)
 
 =====c4====
+IARPA - paid for a project to understand how to improve forecasting accuracy in IC.
+GJP - Good judgment project - competed in the IARPA tournament against the control group (current operating procedure).  found elite superforecasters who were much better at forecasting than top analysts
+yale labs - coin flip experiment - illusion of control
+regression to the mean - in a coin flip scenario, where trials have 0 correlation, one can expect a good forecaster of 100 flips to quickly regress to the mean.  in a scenario of skill, one can expect a slower regression to the mean

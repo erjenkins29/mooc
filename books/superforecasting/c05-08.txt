@@ -1,0 +1,31 @@
+=====c5====
+Enrico Fermi - how many piano tuners are there in Chicago
+base rate - outside view vs inside view
+george soros often says a key aspect to his success is his ability to step back from his inital idea, wonder if there's a different perspective to challenge it -- in his own mind
+for superforecasters, beliefs are hypotheses to be tested, not treasures to be guarded.
+
+=====c6====
+first 10ish pages mainly about being ok with continuous representations of certainty (not the yes/no dichotomy)
+epistemic uncertainty - don't know it, but it is theoretically knowable
+aleatory uncertainty  - don't know it, and it is unknowable
+the more granular the predicions, the better
+counterfactual thinking - pondering about how things may have turned out than they otherwise did
+p. 149 - survey, all were asked about a turning point in their lives, half were asked to describe it, half were asked to envision the alternate paths.  those in the latter were more likely to ascribe the event to fate
+p. 152 - survey, all were asked pro-fate and pro-probabilistic thinking statements, whether they agree with them or not.  low score ==> rejection of fate, high score ==> had to be fate/divined. 4 groups surveyed, general public[mid score], Upenn undergrads[mid-low score], forecasters[low score], superforecasters [lowest score].  Additionally, plotted against the brier scores, there was a 'significat correlation', meaning the more someone rejects fate as a means of thinking, the more likely they are to succeed in forecasting accuracy.
+
+=====c7====
+John Keynes - "When the facts change, I change my mind"
+superforecasters update predictions much more than regular forecasters.
+p. 161 - getting people to commit to a belief is a great way to freeze it in place, making it resistant to change
+jenga tower - stronger beliefs or commitment to a belief about a topic make it harder to change your mind about your position on that topic... more resistant to updating your beliefs on that opinion.  closer to the bottom of the jenga tower than the top, where blocks are easier to remove. 
+dilution effect
+ephemeral
+George orwell - politics and the english language - 6 emphatic rules, last one being 'break these rules sooner than saying anything outright barbarous'
+
+=====c8====
+growth mindset vs fixed mindset -- if one has fixed mindset, and is 'bad at math', it is self-fulfilling
+1933 - John meynard keynes - 'there is no harm in being sometimes wrong, especially if one is promptly found out'
+value investing
+tacit knowledge - knowledge gained from experience
+hindsight bias
+postmortem
