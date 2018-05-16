@@ -1,0 +1,13 @@
+
+#### Typeclasses
+Eq      : all types for which one can test equality
+Ord     : all types which have an ordering.  can be GT, LT, or EQ
+Show    : can be presented as string.  Most common used function with this typeclass is "show"
+Read    : reverse of Show... takes a string and returns a type that is a member of Read
+  e.g.   read "True" || False
+         read "5"    :: Float
+Enum    : for sequentially ordered types that can be enumerated.  Also have defined successors and predecessors, so one can use the succ and pred functions 
+Bounded : have an upper and lower bound
+Num     : numeric type class
+Integral: also numeric, but only includes whole numbers.  (Int and Integer are types)
+Floating: only floating point numbers, like Float and Double
