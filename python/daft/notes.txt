@@ -1,0 +1,15 @@
+### In order to generate custom fonts.....
+matplotlib.rc('font', **font)
+
+####  to find all system fonts:
+
+import matplotlib.font_manager
+flist = matplotlib.font_manager.get_fontconfig_fonts()
+names = [matplotlib.font_manager.FontProperties(fname=fname).get_name() for fname in flist]
+print names
+
+#### or....
+import matplotlib.font_manager
+matplotlib.font_manager.findSystemFonts(fontpaths=None, fontext='ttf')
+
+#### ref: https://stackoverflow.com/questions/8753835/how-to-get-a-list-of-all-the-fonts-currently-available-for-matplotlib
